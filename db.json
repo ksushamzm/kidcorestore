@@ -1,0 +1,248 @@
+{
+  "orders": [
+    {
+      "address": "",
+      "user": {
+        "name1": ""
+      },
+      "paymentId": "",
+      "deliveryId": "",
+      "products": [
+        {
+          "title": "Братц/Братз Strut it! (страт ит!) 2004 г.в. 2 шт, в отличном состоянии",
+          "image": "img/кукла1.jpeg",
+          "price": 6000,
+          "id": 1,
+          "quantity": 1
+        },
+        {
+          "title": "Барби и Кен Barbie and Ken Wedding свадебный набор 2007 г.в. б/у",
+          "image": "img/кукла2.webp",
+          "price": 1000,
+          "id": 2,
+          "quantity": 1
+        }
+      ],
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "address": "",
+      "user": {
+        "name1": ""
+      },
+      "paymentId": "",
+      "deliveryId": "",
+      "products": [
+        {
+          "title": "Братц/Братз Strut it! (страт ит!) 2004 г.в. 2 шт, в отличном состоянии",
+          "image": "img/кукла1.jpeg",
+          "price": 6000,
+          "id": 1,
+          "quantity": 1
+        },
+        {
+          "title": "Барби и Кен Barbie and Ken Wedding свадебный набор 2007 г.в. б/у",
+          "image": "img/кукла2.webp",
+          "price": 1000,
+          "id": 2,
+          "quantity": 1
+        }
+      ],
+      "userId": 2,
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "title": "Мягкая игрушка3",
+      "image": "./img/мягкаяигрушка3.jpg",
+      "price": 700,
+      "id": 11,
+      "quantity": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Куклы"
+    },
+    {
+      "id": 2,
+      "title": "Фигурки"
+    },
+    {
+      "id": 3,
+      "title": "Мягкие игрушки"
+    },
+    {
+      "id": 4,
+      "title": "Конструктор"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "img/кукла1.jpeg",
+      "title": "Братц/Братз Strut it! (страт ит!) 2004 г.в. 2 шт, в отличном состоянии",
+      "categoryId": 1,
+      "price": 6000,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "title": "Барби и Кен Barbie and Ken Wedding свадебный набор 2007 г.в. б/у",
+      "image": "img/кукла2.webp",
+      "categoryId": 1,
+      "price": 1000,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "image": "img/кукла3.jpg",
+      "title": "Барби Дневнички Barbie Diaries набор в коробке с личным дневничком ",
+      "categoryId": 1,
+      "price": 7000,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "image": "img/кукла4.webp",
+      "title": "Кукла Братц Ясмин | Bratz Jasmin | 2001 год | оригинал | б/у в хорошем состоянии",
+      "categoryId": 1,
+      "price": 7000,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "title": "Фигурка1",
+      "image": "./img/фигурка1.png",
+      "categoryId": 2,
+      "price": 500,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "title": "Фигурка2",
+      "image": "./img/фигурка2.png",
+      "categoryId": 2,
+      "price": 600,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "title": "Фигурка3",
+      "image": "./img/фигурка3.png",
+      "categoryId": 2,
+      "price": 500,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "title": "Фигурка4",
+      "image": "./img/фигурка4.png",
+      "categoryId": 2,
+      "price": 1000,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 9,
+      "title": "Мягкая игрушка1",
+      "image": "./img/мягкаяигрушка1.jpg",
+      "categoryId": 3,
+      "price": 900,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 10,
+      "title": "Мягкая игрушка2",
+      "image": "./img/мягкаяигрушка2.jpg",
+      "categoryId": 3,
+      "price": 800,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 11,
+      "title": "Мягкая игрушка3",
+      "image": "./img/мягкаяигрушка3.jpg",
+      "categoryId": 3,
+      "price": 700,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 12,
+      "title": "Мягкая игрушка4",
+      "image": "./img/мягкаяигрушка4.jpg",
+      "categoryId": 3,
+      "price": 600,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 13,
+      "title": "Конструктор1",
+      "image": "./img/конструктор1.jpg",
+      "categoryId": 4,
+      "price": 4000,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 14,
+      "title": "Конструктор2",
+      "image": "./img/конструктор2.jpg",
+      "categoryId": 4,
+      "price": 3000,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 15,
+      "title": "Конструктор3",
+      "image": "./img/конструктор3.jpg",
+      "categoryId": 4,
+      "price": 2000,
+      "userId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 16,
+      "title": "Конструктор4",
+      "image": "./img/конструктор1.jpg",
+      "categoryId": 4,
+      "price": 1000,
+      "userId": 2,
+      "quantity": 1
+    }
+  ],
+  "users": [
+    {
+      "name1": "Мишуткина Варвара Анатольевна",
+      "email": "mishutkina@mail.ru",
+      "phone": "89200282930",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 2,
+      "address": "г. Нижний Новгород, ул. Пушкина д. 23"
+    },
+    {
+      "name1": "Мишуткина Варвара Анатольевна",
+      "email": "mishutkina@mail.ru",
+      "phone": "89200282930",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 3
+    }
+  ]
+}
