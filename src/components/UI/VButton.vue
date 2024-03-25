@@ -59,8 +59,8 @@
     }
 
     .v-button--theme-danger {
-        background-color: #2D9773;
-        border-color: #2D9773;
+        background-color: #224D93;
+        border-color: #224D93;
 
         color: #224D93;
     }

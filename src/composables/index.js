@@ -7,4 +7,3 @@ export * from './useRegistration';
 export * from './useUserProfile';
 export * from './useUserProducts';
 export * from './useOrdering';
-export * from './useFavorites';
