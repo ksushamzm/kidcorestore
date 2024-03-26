@@ -1,9 +1,12 @@
 <template>
     <v-container>
+     <nav>
+            <h2> Регистрация </h2> 
+        </nav>
        <label>
             <div>ФИО:</div>
 
-            <input type="text" v-model="model.name1">
+            <input type="text" class="namename" v-model="model.name1">
        </label>
 
        <label>
@@ -31,10 +34,9 @@
 
         <br>
 
-       <button @click="onSubmit">Зарегистрироваться</button>
+       <button @click="onSubmit" class="namename">Зарегистрироваться</button>
 
-
-       <br><br>
+       <br>
 
      <router-link to="/auth/sign-in">
           Уже зарегистрированы?

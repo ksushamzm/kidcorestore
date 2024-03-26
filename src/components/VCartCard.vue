@@ -1,6 +1,6 @@
 <template>
     <div class="v-cart-card">
-        <div>{{ image }}</div>
+        <img class="v-catalog-card__image" :src="image" >
         <hr>
         <div>{{ title }}</div>
         <hr>

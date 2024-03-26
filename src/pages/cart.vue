@@ -1,64 +1,51 @@
 <template>
     <v-container>
+        <h2> Корзина </h2>
         <div>
             Количество товаров: {{ cartTotalCount }}
         </div>
-
         <div>
             Итоговая стоимость: {{ cartTotalSum }}р.
         </div>
+        <hr>
+        <v-row>
+            <v-col
+            v-for="cartItem in cartNotDelay"
+            span="3"
+            md="6"
+            sm="12">
 
-        <template v-if="cartNotDelay.length">
-            <h5>Товары</h5>
             <v-cart-card 
-                v-for="cartItem in cartNotDelay"
                 :id="cartItem.id"
                 :title="cartItem.title"
                 :price="cartItem.price"
                 :quantity="cartItem.quantity"
                 :image="cartItem.image"
-                :delay="cartItem.delay"
-                @change-count="onChangeCount"
-                @change-delay="onChangeDelay"
                 @delete="onDelete"
             />
-        </template>
-
-        <template v-if="cartDelay.length">
-            <h5>Отложенные товары</h5>
-            <v-cart-card 
-                v-for="cartItem in cartDelay"
-                :id="cartItem.id"
-                :title="cartItem.title"
-                :price="cartItem.price"
-                :quantity="cartItem.quantity"
-                :image="cartItem.image"
-                :delay="cartItem.delay"
-                @change-count="onChangeCount"
-                @change-delay="onChangeDelay"
-                @delete="onDelete"
-            />
-        </template>
-
-        <router-link to="/ordering">
+            
+    </v-col>
+    </v-row>
+    <hr>
+    <router-link to="/ordering">
             Оформить заказ
         </router-link>
     </v-container>
+        <hr>
 </template>
 
 <script setup>
     import { useCart } from '@/composables';
     import VContainer from '@/components/VContainer.vue';
     import VCartCard from '@/components/VCartCard.vue';
+    import VRow from '@/components/UI/VRow.vue';
+    import VCol from '@/components/UI/VCol.vue';
 
     const { 
-        cartDelay,
         cartNotDelay,
         cartTotalCount, 
         cartTotalSum, 
-        getCart, 
-        onChangeCount, 
-        onChangeDelay, 
+        getCart,
         onDelete 
     } = useCart();
 

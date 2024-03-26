@@ -1,7 +1,7 @@
 <template>
     <nav class="v-menu2">
         <router-link to="/cart" class="v-menu2__item">
-        <img class="v-menu__item" src="../assets/img/корзина.png">
+        <img class="v-menu__item" src="/корзина.png">
     </router-link>
     </nav>
 </template>

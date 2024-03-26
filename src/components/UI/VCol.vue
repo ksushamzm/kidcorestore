@@ -29,6 +29,7 @@
     .v-col {
         padding-left: 10px;
         padding-right: 10px;
+        text-decoration: none;
     }
 
     .v-col--span-1 {

@@ -17,7 +17,7 @@
 
 <style>
     .v-footer {
-        border-top: 1px solid;
+        border-top: 2px solid;
         padding: 10px 0;
     }
 

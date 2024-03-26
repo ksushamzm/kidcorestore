@@ -1,15 +1,16 @@
 <template>
     <v-container>
+        <h2>Добавить товар</h2>
         <div>
             Название
-            <input type="text" v-model="model.title">
+            <input type="text" v-model="model.title" class="text5">
         </div>
-
+        <hr>
         <div>
-            Изображение
-            <input type="text" v-model="model.image">
+            Описание
+            <input class="text2" type="text" v-model="model.title">
         </div>
-
+        <hr>
         <div>
             Категория
             <select v-model="model.categoryId">
@@ -21,11 +22,12 @@
                 </option>
             </select>
         </div>
-
+        <hr>
         <div>
-            Цена
-            <input type="text" v-model="model.price">
+            Цена      
+            <input class="text3" type="number" v-model="model.price"> ₽
         </div>
+        <hr>
 
         <v-button theme="primary" size="medium" @click="onSubmit">
             Добавить товар
@@ -54,3 +56,7 @@
         addProduct(model.value);
     }
 </script>
+
+<style>
+
+</style>

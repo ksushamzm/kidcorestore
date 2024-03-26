@@ -13,7 +13,6 @@
                     :image="product.image"
                     :title="product.title"
                     :category="product.categoryId"
-                    :is-favorites="product.isFavorites"
                     @add-to-cart="onAddToCart"
                 />
             </v-col>

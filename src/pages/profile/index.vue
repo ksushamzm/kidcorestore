@@ -1,40 +1,27 @@
 <template>
     <v-container>
         <nav>
-            <br>
-            Профиль 
+            <h2> Профиль </h2> 
         </nav>
+
+        <div v-if="user">
+            <div>ФИО: <input type="text" v-model="model.name1" class="namename"></div> <br>
+            <div>Электронная почта: <input type="email" v-model="model.email"></div> <br>
+            <div>Телефон: <input type="tel" v-model="model.phone"></div> <br>
+            <div>Адрес доставки <input v-model="model.address" class="text4"></div> <br>
+        </div>
+
+        <button @click="onUpdate" class="save">Сохранить</button>
 
         <br>
 
-        <div v-if="user">
-            <div>ФИО: <input type="text" v-model="model.name1"></div> <br>
-            <div>Электронная почта: <input type="email" v-model="model.email"></div> <br>
-            <div>Телефон: <input type="tel" v-model="model.phone"></div> <br>
-            <div>Адрес доставки <input type="text" v-model="model.address"></div> <br>
-        </div>
-
-        <button @click="onUpdate">Сохранить</button>
-
-        <br><br>
-
-        <button @click="logout">Выход</button>
+        <button @click="logout" class="end">Выход</button>
 
         <hr>
 
         <router-link to="/profile/add-product">
                 Добавить товар
-            </router-link> <br><br>
-        <router-link to="/profile/products">
-                Активные объявления
-        </router-link> <br><br>
-        Архивные объявления 
-        Заказы <br><br>
-        Мои отзывы <br><br>
-        Избранное <br><br>
-        Доставка <br><br>
-        Адреса <br><br>
-        Настройки <br><br>
+            </router-link>
     </v-container>
 </template>
 
@@ -49,3 +36,7 @@
         updateUser(user.value.id, model.value);
     }
 </script>
+
+<style>
+
+</style>

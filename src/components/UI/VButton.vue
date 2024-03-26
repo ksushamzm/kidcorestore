@@ -40,7 +40,7 @@
     color: #224D93;
     border: 2px solid #224D93; 
     text-align: center;
-    align-items: flex-start;
+    align-items: center;
     cursor: pointer;
     box-sizing: border-box;
     background-color: #FCF6EB;

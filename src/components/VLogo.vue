@@ -1,6 +1,6 @@
 <template>
     <router-link class="v-logo" to="/">
-        <img class="v-logo" src="../assets/img/logo.png">
+        <img class="v-logo" src="/logo.png">
     </router-link>
 </template>
 

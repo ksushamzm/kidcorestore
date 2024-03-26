@@ -1,21 +1,22 @@
 <template>
     <v-container>
+        <nav>
+            <h2> Вход </h2> 
+        </nav>
+
         <div>
             <div>Номер телефона</div>
-            <input type="text" v-model="model.phone">
+            <input type="tel" v-model="model.phone">
         </div>
-
+        <br>
         <div>
             <div>Пароль</div>
             <input type="password" v-model="model.password">
         </div>
-
-        <button @click="onLogin(model)">Войти</button>
-
-        <br><br>
-
+        <br>
+        <button @click="onLogin(model)" class="save">Войти</button>
         <router-link to="/auth/sign-up">
-            Ещё не зарегистрированы?
+            <h5>Регистрация</h5>
         </router-link>
     </v-container>  
 </template>

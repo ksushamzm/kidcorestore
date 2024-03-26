@@ -1,10 +1,14 @@
 <template>
     <v-container>
+        <nav>
+            <h2> Каталог </h2> 
+        </nav>
         <router-link 
             v-for="category in categories"
             :to="`/catalog/${category.id}`"
         >
             {{ category.title }}
+            <hr>
         </router-link>
     </v-container>
 </template>

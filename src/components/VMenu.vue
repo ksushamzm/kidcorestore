@@ -1,7 +1,7 @@
 <template>
     <nav class="v-menu">
         <router-link to="/catalog" class="v-menu__item">
-            <img class="v-menu__item" src="../assets/img/меню.png" 
+            <img class="v-menu__item" src="/меню.png" 
         </router-link>
     </nav>
 </template>
@@ -19,6 +19,6 @@
     }
 
     .v-menu__item.router-link-active {
-        color: #2D9773;
+        color: #224D93;
     }
 </style>

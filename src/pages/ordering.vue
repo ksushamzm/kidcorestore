@@ -1,8 +1,15 @@
 <template>
     <v-container>
         <div>
-            <h4>Куда доставить</h4>
+            <h2>Доставка</h2>
+            Количество товаров: {{ cartTotalCount }}
+        </div>
+        <div>
+            Итоговая стоимость: {{ cartTotalSum }}р.
+        </div>
 
+        <div>
+            <hr>
             <label>
                 Адрес<br>
                 <input type="text" v-model="model.address">
@@ -10,11 +17,10 @@
         </div>
 
         <div>
-            <h4>Персональные данные</h4>
-
+            <hr>
             <label>
                 ФИО<br>
-                <input type="text" v-model="model.user.name1">
+                <input type="text"  class="namename" v-model="model.user.name1">
             </label>
         </div>
 
@@ -31,7 +37,6 @@
 
         <div>
             <h4>Тип доставки</h4>
-            
             <div>
                 <label><input type="radio" v-model="model.deliveryId" value="1" name="delivery"> Почта России</label>
                 <label><input type="radio" v-model="model.deliveryId" value="2" name="delivery"> СДЭК</label>
@@ -40,7 +45,7 @@
             </div>
         </div>
 
-        <br><br>
+        <br>
 
         <v-button 
             theme="primary"
@@ -57,7 +62,8 @@
     import VContainer from '@/components/VContainer.vue';
     import VButton from '@/components/UI/VButton.vue';
     import { useOrdering } from '@/composables';
-
+    import { useCart } from '@/composables';
+    
     const { createOrder } = useOrdering();
 
     const model = ref({
@@ -68,6 +74,15 @@
         paymentId: '',
         deliveryId: '',
     });
+
+    const {
+        cartTotalCount, 
+        cartTotalSum, 
+        getCart
+    } = useCart();
+
+    getCart();
+    
 
     function onSubmit () {
         createOrder(model.value);

@@ -12,8 +12,13 @@
                 </v-col>
 
                 <v-col>
-                    <input type="text" v-model="search">
-                    <button @click="onSearch">Найти!</button>
+                </v-col>
+                <v-col>
+                </v-col>
+
+                <v-col>
+                    <input type="text" v-model="search" class="search">
+                    <button @click="onSearch"> Найти!</button>
                 </v-col>
 
                 <v-col>
@@ -27,7 +32,7 @@
                         class="v-menu__item">
 
                         <template v-if="user">
-                            <img class="v-menu__item" src="../assets/img/профиль.png">
+                            <img class="v-menu__item" src="/профиль.png">
                         </template>
 
                     </router-link>
@@ -37,7 +42,7 @@
                         to="/auth/sign-in" 
                         class="v-menu__item">
 
-                    <img class="v-menu__item" src="../assets/img/профиль.png">
+                    <img class="v-menu__item" src="/профиль.png">
 
                     </router-link>
                 </v-col>

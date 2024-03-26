@@ -16,7 +16,8 @@ const routes = [
         path: '/auth/sign-in', 
         component: () => import('@/pages/auth/sign-in.vue'),
         meta: {
-            auth: false
+            auth: false,
+            title: 'Вход'
         }
     },
     { 
@@ -24,7 +25,7 @@ const routes = [
         path: '/auth/sign-up', 
         component: () => import('@/pages/auth/sign-up.vue'),
         meta: {
-            auth: false
+            auth: false,
         }
     },
     {
@@ -32,7 +33,7 @@ const routes = [
         path: '/search',
         component: () => import('@/pages/search.vue'),
         meta: {
-            auth: false
+            auth: false,
         }
     },
     { 
@@ -49,7 +50,8 @@ const routes = [
         path: '/catalog/:category', 
         component: () => import('@/pages/catalog/category.vue'),
         meta: {
-            auth: false
+            auth: false,
+            title: 'Категории'
         }
     },
     { 
@@ -74,7 +76,8 @@ const routes = [
         path: '/ordering', 
         component: () => import('@/pages/ordering.vue'),
         meta: {
-            auth: true
+            auth: true,
+            title: 'Оформление заказа'
         }
     },
     { 
@@ -82,7 +85,8 @@ const routes = [
         path: '/profile', 
         component: () => import('@/pages/profile/index.vue'),
         meta: {
-            auth: true
+            auth: true,
+            title: 'Профиль'
         }
     },
     { 
@@ -90,18 +94,10 @@ const routes = [
         path: '/profile/add-product', 
         component: () => import('@/pages/profile/add-product.vue'),
         meta: {
-            auth: true
+            auth: true,
+            title: 'Добавить товар'
         }
-    },
-    { 
-        name: 'MyProducts',
-        path: '/profile/products', 
-        component: () => import('@/pages/profile/products.vue'),
-        meta: {
-            auth: true
-        }
-    },
-
+    }
 ];
 
 export const router = createRouter({
