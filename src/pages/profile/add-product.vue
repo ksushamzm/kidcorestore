@@ -8,7 +8,7 @@
         <hr>
         <div>
             Описание
-            <input class="text2" type="text" v-model="model.title">
+            <input class="text2" type="text" v-model="model.description">
         </div>
         <hr>
         <div>
